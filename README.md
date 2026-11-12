@@ -7,6 +7,7 @@ How do European option model prices and local sensitivities change with volatili
 The package implements Black-Scholes-Merton with continuous compounding: d1=[ln(S/K)+(r+sigma^2/2)T]/(sigma*sqrt(T)), d2=d1-sigma*sqrt(T). Call value is S*N(d1)-K*exp(-rT)*N(d2); put value is K*exp(-rT)*N(-d2)-S*N(-d1). It reports delta, gamma, vega, theta per year, rho per unit rate, and bisection implied volatility.
 
 ## Assumptions and limitations
+- This synthetic example is illustrative and does not demonstrate real-world investment performance.
 - European exercise, constant volatility, constant risk-free rate, frictionless trading, no dividends, and lognormal underlying price dynamics.
 - The report is a deterministic model scenario (S=K=100, T=1, r=5%, volatility=20%); it contains no market quote and is not a fair-value recommendation.
 - Greeks are local model derivatives; at expiry and zero volatility the package uses explicit boundary conventions.
