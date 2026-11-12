@@ -1,0 +1,11 @@
+{
+  "spot": 100.0,
+  "strike": 100.0,
+  "maturity_years": 1.0,
+  "continuously_compounded_rate": 0.05,
+  "input_volatility": 0.2,
+  "call_price": 10.450583572185565,
+  "put_price": 5.573526022256971,
+  "call_implied_volatility": 0.1999999999998181,
+  "call_delta": 0.6368306511756191
+}

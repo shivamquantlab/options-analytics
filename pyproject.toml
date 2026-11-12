@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "options-analytics"
+version = "0.1.0"
+description = "Black-Scholes prices, Greeks, and implied volatility with validation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "ruff>=0.8,<1"]
+
+[project.scripts]
+options-demo = "options_analytics.experiment:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra -p no:cacheprovider"
+
